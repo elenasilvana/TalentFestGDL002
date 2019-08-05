@@ -3,7 +3,7 @@
     justify-content: center;
     font-size: 2rem;
     border-left: 2px solid #077F8C;
-    width: 35%;
+    padding-left: .5rem;
 }
 
 .container-lsm{
@@ -38,3 +38,23 @@
 .btn-ver-mas{
     width: 25%;
 }
+
+@media screen and (max-width: 780px) {
+    .info-container{
+        flex-direction: column;
+    }
+
+    .image-sordo {
+        width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 460px) {
+    .info-container{
+        flex-direction: column;
+    }
+
+    .image-sordo {
+        width: 100%;
+    }
+  }

@@ -2,16 +2,22 @@ import React, { Component } from 'react';
 import NavBar from '../components/NavBar';
 import ShowCard from './ShowCard';
 import * as CARDIMG from '../Data/IMAGES';
+import './cards.css';
+import './lsm.css';
 
 class AlphabetPage extends Component {
   render() {
     return (
-      <container>
+      <section>
 
-      <div>
+ 
         <NavBar />
-      </div>
-      <div>
+        <section className="container-lsm">
+          <h5 className="title-lsm">Alfabeto</h5>
+
+          {/* <section className="info-container"></section> */}
+  
+      <div className="container-cards">
         {
           CARDIMG.SINGSLETTERS.map((card, index) => (
             <ShowCard
@@ -19,7 +25,8 @@ class AlphabetPage extends Component {
             ))
           }
       </div>
-          </container>
+      </section>
+          </section>
     );
   }
 }
