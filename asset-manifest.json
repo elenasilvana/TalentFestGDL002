@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/TalentFestGDL002/static/css/main.2cce8147.chunk.css",
-    "main.js": "/TalentFestGDL002/static/js/main.5dd037bf.chunk.js",
-    "main.js.map": "/TalentFestGDL002/static/js/main.5dd037bf.chunk.js.map",
+    "main.css": "/TalentFestGDL002/static/css/main.57bcba90.chunk.css",
+    "main.js": "/TalentFestGDL002/static/js/main.eab86f8a.chunk.js",
+    "main.js.map": "/TalentFestGDL002/static/js/main.eab86f8a.chunk.js.map",
     "runtime~main.js": "/TalentFestGDL002/static/js/runtime~main.8dca6983.js",
     "runtime~main.js.map": "/TalentFestGDL002/static/js/runtime~main.8dca6983.js.map",
-    "static/js/2.393b14e3.chunk.js": "/TalentFestGDL002/static/js/2.393b14e3.chunk.js",
-    "static/js/2.393b14e3.chunk.js.map": "/TalentFestGDL002/static/js/2.393b14e3.chunk.js.map",
+    "static/css/2.ae9e8b99.chunk.css": "/TalentFestGDL002/static/css/2.ae9e8b99.chunk.css",
+    "static/js/2.b359c4c6.chunk.js": "/TalentFestGDL002/static/js/2.b359c4c6.chunk.js",
+    "static/js/2.b359c4c6.chunk.js.map": "/TalentFestGDL002/static/js/2.b359c4c6.chunk.js.map",
     "index.html": "/TalentFestGDL002/index.html",
-    "precache-manifest.ed11eb48ec33c5c8db2c09e61a9b0a9d.js": "/TalentFestGDL002/precache-manifest.ed11eb48ec33c5c8db2c09e61a9b0a9d.js",
+    "precache-manifest.d40ed3a929265ee8ac3043f4a719117c.js": "/TalentFestGDL002/precache-manifest.d40ed3a929265ee8ac3043f4a719117c.js",
     "service-worker.js": "/TalentFestGDL002/service-worker.js",
-    "static/css/main.2cce8147.chunk.css.map": "/TalentFestGDL002/static/css/main.2cce8147.chunk.css.map",
-    "static/media/logo.svg": "/TalentFestGDL002/static/media/logo.5d5d9eef.svg"
+    "static/css/2.ae9e8b99.chunk.css.map": "/TalentFestGDL002/static/css/2.ae9e8b99.chunk.css.map",
+    "static/css/main.57bcba90.chunk.css.map": "/TalentFestGDL002/static/css/main.57bcba90.chunk.css.map",
+    "static/media/sordo.jpeg": "/TalentFestGDL002/static/media/sordo.78cfa953.jpeg"
   }
 }
