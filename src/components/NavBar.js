@@ -1,9 +1,19 @@
-import React from "react";
+import React, {Component} from "react";
 import { Navbar, NavItem } from "react-materialize";
 import { Link } from "react-router-dom";
 
-const Nav = () => {
+//import Materialize
+import M from "materialize-css";
+
+class Nav extends Component {
+
+componentDidMount(){
+  M.AutoInit();
+}
+
+render(){
   return (
+    <div>
     <nav className="nav-wrapper">
       <div className="container">
         <a href="#" className="brand-logo">
@@ -25,7 +35,9 @@ const Nav = () => {
         </ul>
       </div>
 
-      <ul className="sidenav" id="menu-responsive" >
+    </nav>
+
+    <ul className="sidenav" id="menu-responsive" >
           <li>
             <Link to="/jugar">Jugar</Link>
           </li>
@@ -36,22 +48,12 @@ const Nav = () => {
             <Link to="/">Home</Link>
           </li>
         </ul>
-        
-    </nav>
 
+    </div>
 
-    // <Navbar brand={<a />} className="nav-wrapper" alignLinks="right">
-    //   <NavItem>
-    //     <Link to="/jugar">Jugar</Link>
-    //   </NavItem>
-    //   <NavItem>
-    //     <Link to="/lsm">LSM</Link>
-    //   </NavItem>
-    //   <NavItem>
-    //     <Link to="/">Home</Link>
-    //   </NavItem>
-    // </Navbar>
+  
   );
+}
 };
 
 export default Nav;
