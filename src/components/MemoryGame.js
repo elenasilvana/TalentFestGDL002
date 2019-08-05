@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import ShowCard from './ShowCard';
+import letterA from '../Images/a.png';
+
 /*const SIGNS = [
     {
     "img":
@@ -28,7 +30,12 @@ class MemoryGame extends Component {
     render(){
         console.log('');
         return(
-        <div><ShowCard /></div>
+            <div>
+            <img src={`./Imagenes/c.png`}></img>
+            <ShowCard
+            img={letterA}
+            />
+            </div>
         )
     }
 }
