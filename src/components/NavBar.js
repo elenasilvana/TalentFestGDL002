@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import { Navbar, NavItem } from "react-materialize";
 import { Link } from "react-router-dom";
-import Logo from "./logo.png";
+import Logo from "../ImagesLSM/logo.png";
 //import Materialize
 import M from "materialize-css";
 import './nav.css';
@@ -28,11 +28,11 @@ class Nav extends Component {
               <i className="material-icons">menu</i>
             </a>
             <ul id="nav-mobile" className="right hide-on-med-and-down">
-              <li>
-                <Link to="/jugar">Jugar</Link>
+              <li >
+                <Link  to="/jugar">Jugar</Link>
               </li>
               <li>
-                <Link to="/lsm">LSM</Link>
+                <Link to="/lsm">Acerca del LSM</Link>
               </li>
               {/* <li>
                 <Link to="/">Home</Link>
@@ -42,15 +42,15 @@ class Nav extends Component {
         </nav>
 
         <ul className="sidenav" id="menu-responsive">
-          <li>
+          <li className="text-il">
             <Link to="/jugar">Jugar</Link>
           </li>
-          <li>
-            <Link to="/lsm">LSM</Link>
+          <li className="text-il">
+            <Link  to="/lsm">Acerca del LSM</Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="/">Home</Link>
-          </li>
+          </li> */}
         </ul>
       </div>
     );

@@ -1,3 +1,8 @@
 .images-logo{
-    width: 9.5rem;
+    width: 13rem;
   }
+
+.text-il{
+  border-bottom: 1px solid #077F8C;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
