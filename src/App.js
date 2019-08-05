@@ -1,11 +1,5 @@
 import React  from 'react';
 import './App.css';
-<<<<<<< HEAD
-//importar de materialize
-
-
-=======
->>>>>>> 3df1f7b6a2a89910048c7ae8b8a640eb65a224b8
 import { HashRouter as BrowserRouter } from 'react-router-dom';
 import { Switch, Route } from 'react-router-dom';
 import AlphabetPage from './components/Alphabet';
