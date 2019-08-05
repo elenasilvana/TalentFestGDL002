@@ -1,14 +1,7 @@
 import React  from 'react';
-import logo from './logo.svg';
 import './App.css';
-//importar de materialize
-import { Link } from 'react-router-dom';
-
 import { HashRouter as BrowserRouter } from 'react-router-dom';
-
 import { Switch, Route } from 'react-router-dom';
-
-//import HomePage from './components/Home';
 import AlphabetPage from './components/Alphabet';
 import MemoryGamePage from './components/MemoryGame';
 import LsmPage from './components/Lsm';
