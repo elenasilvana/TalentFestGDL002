@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import ShowCard from './ShowCard';
+import letterA from '../Images/a.png';
 import Nav from './NavBar';
+
 /*const SIGNS = [
     {
     "img":
@@ -31,7 +33,15 @@ class MemoryGame extends Component {
         return(
             
         <div><Nav />
-            <ShowCard /></div>
+            <ShowCard />
+                {
+                    //for(let i=0; i>)
+                }
+            <img src={require(`../Images/c.png`)}></img>
+            <ShowCard
+            img={letterA}
+            />
+            </div>
         )
     }
 }
