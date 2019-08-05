@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/TalentFestGDL002/precache-manifest.d40ed3a929265ee8ac3043f4a719117c.js"
+  "/TalentFestGDL002/precache-manifest.7525f6c48ac75abce99865d919903c2a.js"
 );
 
 self.addEventListener('message', (event) => {
