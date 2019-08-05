@@ -1,4 +1,5 @@
 import React  from 'react';
+import 'materialize-css/dist/css/materialize.min.css';
 import './App.css';
 import { HashRouter as BrowserRouter } from 'react-router-dom';
 import { Switch, Route } from 'react-router-dom';

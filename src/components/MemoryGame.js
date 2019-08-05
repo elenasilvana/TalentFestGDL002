@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import ShowCard from './ShowCard';
 import * as CARDIMG  from '../Data/IMAGES';
+import Nav from './NavBar';
+
 
 
 class MemoryGame extends Component {
@@ -10,7 +12,10 @@ class MemoryGame extends Component {
 
         //CARDIMG.SINGSLETTERS.map((card)=>{console.log(card)});
         return(
-            <div>
+            
+        <div>
+            <Nav />
+            <ShowCard />
                 {
                    CARDIMG.SINGSLETTERS.map((card,index) =>(
                     <ShowCard
