@@ -7,19 +7,16 @@ class AlphabetPage extends Component {
   render() {
     return (
       <container>
-
-      <div>
-        <NavBar />
-      </div>
-      <div>
-        {
-          CARDIMG.SINGSLETTERS.map((card, index) => (
-            <ShowCard
-            img={card} />
+          <NavBar />
+        <div>
+          {
+            CARDIMG.SINGSLETTERS.map((card, index) => (
+              <ShowCard
+                img={card} />
             ))
           }
-      </div>
-          </container>
+        </div>
+      </container>
     );
   }
 }
