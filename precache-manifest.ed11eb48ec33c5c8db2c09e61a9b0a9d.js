@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8e56b48aea05a6f35d9b04c8581b78ae",
+    "revision": "d58793a13f71d0c177fc979a99ff7109",
     "url": "/TalentFestGDL002/index.html"
   },
   {
-    "revision": "5640603f4aeebc56d656",
+    "revision": "61fe3c6f95b1cc05518a",
     "url": "/TalentFestGDL002/static/css/main.2cce8147.chunk.css"
   },
   {
-    "revision": "2e0129063922e3bb197a",
-    "url": "/TalentFestGDL002/static/js/2.b41502e9.chunk.js"
+    "revision": "3de2a82a6265ccd6a1ac",
+    "url": "/TalentFestGDL002/static/js/2.393b14e3.chunk.js"
   },
   {
-    "revision": "5640603f4aeebc56d656",
-    "url": "/TalentFestGDL002/static/js/main.15696266.chunk.js"
+    "revision": "61fe3c6f95b1cc05518a",
+    "url": "/TalentFestGDL002/static/js/main.5dd037bf.chunk.js"
   },
   {
     "revision": "088a6520dd0bd48cb879",
