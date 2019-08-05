@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ShowCard from './ShowCard';
+import Nav from './NavBar';
 /*const SIGNS = [
     {
     "img":
@@ -28,7 +29,9 @@ class MemoryGame extends Component {
     render(){
         console.log('');
         return(
-        <div><ShowCard /></div>
+            
+        <div><Nav />
+            <ShowCard /></div>
         )
     }
 }

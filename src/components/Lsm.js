@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import Nav from './NavBar';
 
 class LsmPage extends Component {
     render(){
         return(
-            <div>lsm</div>
+            <div><Nav />
+            lsm</div>
         )
     }
 }
