@@ -1,26 +1,32 @@
-import React from 'react';
+import React  from 'react';
 import logo from './logo.svg';
 import './App.css';
+//importar de materialize
+import { Link } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hola mundo
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { HashRouter as BrowserRouter } from 'react-router-dom';
+
+import { Switch, Route } from 'react-router-dom';
+
+//import HomePage from './components/Home';
+import AlphabetPage from './components/Alphabet';
+import MemoryGamePage from './components/MemoryGame';
+import LsmPage from './components/Lsm';
+
+
+
+const App = () => {
+    return (
+      <BrowserRouter>
+    <Switch>
+      <Route exact path='/' component={AlphabetPage} />
+      <Route path="/jugar" component={MemoryGamePage} />
+      <Route path="/lsm" component={LsmPage} />
+    </Switch>
+      </BrowserRouter>
+    );
+
+  
 }
 
 export default App;
