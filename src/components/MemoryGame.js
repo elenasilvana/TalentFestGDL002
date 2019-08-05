@@ -1,32 +1,34 @@
 import React, { Component } from 'react';
-const SIGNS = [
+import ShowCard from './ShowCard';
+/*const SIGNS = [
     {
     "img":
-    require("./src/components/Imagenes/a.png;"),
+    require('./src/Imagenes/a.png'),
     "letter":
     "a" 
     },
     {
         "img":
-       require("./src/components/Imagenes/b.png;"),
+       require('./src/Imagenes/b.png'),
         "letter":
         "b" 
         },
+
         {
             "img":
-            require("./src/components/Imagenes/c.png;"),
+            require('./src/Imagenes/c.png'),
             "letter":
             "c" 
             }
             
         
     
-]
+]*/
 class MemoryGame extends Component {
     render(){
-        console.log(SIGNS);
+        console.log('');
         return(
-        <div>juega{SIGNS[1].img}</div>
+        <div><ShowCard /></div>
         )
     }
 }
