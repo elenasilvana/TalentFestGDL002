@@ -2,7 +2,7 @@ import React  from 'react';
 import logo from './logo.svg';
 import './App.css';
 //importar de materialize
-import { Link } from 'react-router-dom';
+
 
 import { HashRouter as BrowserRouter } from 'react-router-dom';
 

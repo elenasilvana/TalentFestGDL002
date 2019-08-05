@@ -1,0 +1,23 @@
+[
+    {
+    "img":
+    require("./src/components/Imagenes/a.png;"),
+    "letter":
+    "a" 
+    },
+    {
+        "img":
+        "./src/components/Imagenes/b.png;",
+        "letter":
+        "b" 
+        },
+        {
+            "img":
+            "./src/components/Imagenes/c.png;",
+            "letter":
+            "c" 
+            }
+            
+        
+    
+]
