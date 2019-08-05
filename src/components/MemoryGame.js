@@ -31,7 +31,10 @@ class MemoryGame extends Component {
         console.log('');
         return(
             <div>
-            <img src={`./Imagenes/c.png`}></img>
+                {
+                    //for(let i=0; i>)
+                }
+            <img src={require(`../Images/c.png`)}></img>
             <ShowCard
             img={letterA}
             />
