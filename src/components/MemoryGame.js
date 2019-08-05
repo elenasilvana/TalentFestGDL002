@@ -1,43 +1,25 @@
 import React, { Component } from 'react';
 import ShowCard from './ShowCard';
-import letterA from '../Images/a.png';
+import * as CARDIMG  from '../Data/IMAGES';
 
-/*const SIGNS = [
-    {
-    "img":
-    require('./src/Imagenes/a.png'),
-    "letter":
-    "a" 
-    },
-    {
-        "img":
-       require('./src/Imagenes/b.png'),
-        "letter":
-        "b" 
-        },
 
-        {
-            "img":
-            require('./src/Imagenes/c.png'),
-            "letter":
-            "c" 
-            }
-            
-        
-    
-]*/
 class MemoryGame extends Component {
+
+    
     render(){
-        console.log('');
+
+        //CARDIMG.SINGSLETTERS.map((card)=>{console.log(card)});
         return(
             <div>
                 {
-                    //for(let i=0; i>)
+                   CARDIMG.SINGSLETTERS.map((card,index) =>(
+                    <ShowCard
+                    img={card}/>  
+                   ))
+                   
                 }
-            <img src={require(`../Images/c.png`)}></img>
-            <ShowCard
-            img={letterA}
-            />
+            
+            
             </div>
         )
     }
