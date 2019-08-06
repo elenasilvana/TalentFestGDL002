@@ -8,19 +8,6 @@ import './lsm.css';
 class AlphabetPage extends Component {
   render() {
     return (
-<<<<<<< HEAD
-      <container>
-          <NavBar />
-        <div>
-          {
-            CARDIMG.SINGSLETTERS.map((card, index) => (
-              <ShowCard
-                img={card} />
-            ))
-          }
-        </div>
-      </container>
-=======
       <section>
 
  
@@ -40,7 +27,6 @@ class AlphabetPage extends Component {
       </div>
       </section>
           </section>
->>>>>>> 0668c8a8e2e9ad86a727ce5f395e602866c42a7f
     );
   }
 }
