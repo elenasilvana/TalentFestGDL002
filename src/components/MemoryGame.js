@@ -3,6 +3,7 @@ import ShowCard from './ShowCard';
 import * as CARDIMG  from '../Data/IMAGES';
 import Nav from './NavBar';
 import a from '../ImagesTrivia/a-1.png';
+import n from '../ImagesTrivia/n-1.png'
 import './cards.css'
 
 class MemoryGame extends Component {
@@ -30,8 +31,29 @@ class MemoryGame extends Component {
               </select>
             </section>
                 
-            <button className="waves-effect waves-light btn btn-siguiente" >Siguiente</button>
+            {/* <button className="waves-effect waves-light btn btn-siguiente" >Siguiente</button> */}
           </section>
+
+          <section className="info-container">
+            <img className="image-sordo" src={n} />
+            <section className="info-ver-mas">
+              <p className="flow-text info-sordo">
+                ¿Qué letra representa la seña?
+              </p>
+
+              <select>
+                <option value="" disabled selected>
+                  Selecciona la opción correcta
+                </option>
+                <option value="1">A</option>
+                <option value="2">E</option>
+                <option value="3">J</option>
+              </select>
+            </section>
+                
+            {/* <button className="waves-effect waves-light btn btn-siguiente" >Siguiente</button> */}
+          </section>
+
         </section>
       </div>
     );
