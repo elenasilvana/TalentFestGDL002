@@ -3,7 +3,10 @@ import ShowCard from './ShowCard';
 import * as CARDIMG from '../Data/IMAGES';
 import Nav from './NavBar';
 import a from '../ImagesTrivia/a-1.png';
+import k from '../ImagesTrivia/k-1.png';
 import n from '../ImagesTrivia/n-1.png';
+import l from '../ImagesTrivia/l-1.png';
+import y from '../ImagesTrivia/y-1.png';
 import './cards.css';
 import {QuizData} from '../Data/QuizData';
 
@@ -12,7 +15,9 @@ class MemoryGame extends Component {
       userAnswer: null,
       currentQuestion: 0,
       options: [],
-      quizEnd: false
+      quizEnd: false,
+      score: 0,
+      disabled:true
     }
   
   loadQuiz = () => {
@@ -29,9 +34,16 @@ class MemoryGame extends Component {
     this.loadQuiz();
   }
   nextQuestionHandler = () => {
+    const {userAnswer,answer,score} = this.state
     this.setState({
       currentQuestion: this.state.currentQuestion + 1
     })
+    if (userAnswer===answer)
+    { console.log('correcta')
+      this.setState({score:score+1})}
+      else{
+        console.log('incorrecta')
+      }
     //console.log(this.state.currentQuestion);
   }
 
@@ -40,6 +52,7 @@ class MemoryGame extends Component {
     if(this.state.currentQuestion !== prevState.currentQuestion){
       this.setState(()=>{
         return {
+          disabled: true,
           questions: QuizData[currentQuestion].question,
           options: QuizData[currentQuestion].options,
           answer: QuizData[currentQuestion].answer
@@ -49,7 +62,7 @@ class MemoryGame extends Component {
   }
   
 checkAnswer = (answer) => {
-  this.setState({userAnswer:answer})
+  this.setState({userAnswer:answer,disabled:false})
 
 }
 
@@ -62,7 +75,8 @@ finishHandler = () => {
     if(quizEnd){
       return(
         <div>
-          <h3>Terminaste</h3>
+          <h3>Terminaste, tu resultado final es de {this.state.score} aciertos</h3>
+          {}
         </div>
       )
     }
@@ -80,7 +94,7 @@ finishHandler = () => {
               </p>
 
             ))}
-            {currentQuestion < QuizData.length - 1 && <button
+            {currentQuestion < QuizData.length - 1 && <button disabled={this.state.disabled}
             onClick={this.nextQuestionHandler}>
               siguiente
 
