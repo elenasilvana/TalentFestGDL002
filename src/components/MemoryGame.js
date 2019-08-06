@@ -1,94 +1,63 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ShowCard from './ShowCard';
-import Data from '../Data/IMAGES';
+import * as CARDIMG  from '../Data/IMAGES';
 import Nav from './NavBar';
-import './cards.css';
-import Card from './Card';
+import a from '../ImagesTrivia/a-1.png';
+import n from '../ImagesTrivia/n-1.png'
+import './cards.css'
 
+class MemoryGame extends Component {
+  render() {
+    return (
+      <div>
+        <Nav />
+        <section className="container-lsm">
+          <h5 className="title-lsm">Trivia</h5>
 
-class MemoryGame extends React.Component {
+          <section className="info-container">
+            <img className="image-sordo" src={a} />
+            <section className="info-ver-mas">
+              <p className="flow-text info-sordo">
+                ¿Qué letra representa la seña?
+              </p>
 
-	constructor(props) {
-		super(props);
-		
-		this.flipCard = this.flipCard.bind(this);
-		this.updateGameStatus = this.updateGameStatus.bind(this);
-	}
+              <select>
+                <option value="" disabled selected>
+                  Selecciona la opción correcta
+                </option>
+                <option value="1">A</option>
+                <option value="2">E</option>
+                <option value="3">J</option>
+              </select>
+            </section>
+                
+            {/* <button className="waves-effect waves-light btn btn-siguiente" >Siguiente</button> */}
+          </section>
 
-	flipCard(card) {
-		if (card.flipped || this.props.gameData.flipCount === 2) return;
-		
-		this.props.updateStore(state => {
-			let newState = Object.assign({}, state);
+          <section className="info-container">
+            <img className="image-sordo" src={n} />
+            <section className="info-ver-mas">
+              <p className="flow-text info-sordo">
+                ¿Qué letra representa la seña?
+              </p>
 
-			newState.gameData.timeout = 5;
+              <select>
+                <option value="" disabled selected>
+                  Selecciona la opción correcta
+                </option>
+                <option value="1">A</option>
+                <option value="2">E</option>
+                <option value="3">J</option>
+              </select>
+            </section>
+                
+            {/* <button className="waves-effect waves-light btn btn-siguiente" >Siguiente</button> */}
+          </section>
 
-			newState.gameData.flipCount++;
-			
-			newState.gameData.flipped.push(card);
-		
-			newState.board[card.y][card.x].flipped = !newState.board[card.y][card.x].flipped;
-			
-			return newState;
-		}, () =>{
-			/* Timeout for the CSS transition to be executed */
-			setTimeout(this.updateGameStatus, 1000);
-		});
-	}
-
-	updateGameStatus(){
-		if (this.props.Data.flipCount !== 2) return;
-
-		this.props.updateStore(state => {
-			let newState = Object.assign({}, state);
-
-			if (newState.Data.flipped[0].image !== newState.gameData.flipped[1].image) {
-
-				newState.board[newState.Data.flipped[0].y][newState.Data.flipped[0].x].flipped = !newState.board[newState.Data.flipped[0].y][newState.Data.flipped[0].x].flipped;
-				newState.board[newState.Data.flipped[1].y][newState.Data.flipped[1].x].flipped = !newState.board[newState.Data.flipped[1].y][newState.Data.flipped[1].x].flipped;
-				newState.Data.flipped = [];
-
-				newState.Data.flipCount = 0;
-
-				newState.Data.playerTurn = newState.Data.playerTurn === 1 ? 2 : 1;  
-			}
-			else{
-				newState.Data.flipped = [];
-				newState.Data.flipCount = 0;
-				newState.Data[`player-${newState.Data.playerTurn}`].score += 2;
-
-				if (newState.Data['player-1'].score + newState.Data['player-2'].score === 20) {
-					let score1 = newState.Data['player-1'].score;
-					let score2 = newState.Data['player-2'].score;
-
-					newState.Data.end = true;
-					newState.Data.winner = score1 === score2 ? 0 : (score1 > score2 ? 1 : 2); 
-				}
-			}		
-
-			return newState;
-		});
-	}
-
-	render() {
-		return (
-			<div className="MemoryGame" style={this.props.style}>
-				{
-					this.props.board.map((row, y) => (
-						<div className="row" key={y}>
-						{
-							row.map((card, x) => (
-								<div className="col-3" key={x}>
-									<Card {...card} onClick={() => this.flipCard(card)} /> 
-								</div>
-							))
-						}
-						</div>
-					))
-				}
-			</div>
-		);
-	}
+        </section>
+      </div>
+    );
+  }
 }
 
 export default MemoryGame;
