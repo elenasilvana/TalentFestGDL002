@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4f5cc203d772cdeb30d79655b00150b0",
+    "revision": "1395cdc0432f09fc1280a9eb9ed4fe25",
     "url": "/TalentFestGDL002/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/TalentFestGDL002/static/css/2.ad9eb4b5.chunk.css"
   },
   {
-    "revision": "c7217ac0b84d48580b07",
+    "revision": "28a60210a343d761eddb",
     "url": "/TalentFestGDL002/static/css/main.9496ac32.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/TalentFestGDL002/static/js/2.547dca5b.chunk.js"
   },
   {
-    "revision": "c7217ac0b84d48580b07",
-    "url": "/TalentFestGDL002/static/js/main.57a60604.chunk.js"
+    "revision": "28a60210a343d761eddb",
+    "url": "/TalentFestGDL002/static/js/main.1b97468d.chunk.js"
   },
   {
     "revision": "088a6520dd0bd48cb879",
