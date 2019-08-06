@@ -82,7 +82,7 @@ class MemoryGame extends Component {
           <Nav />
           <div className="final-score">
           <p className="score-title">
-            Terminaste, tu resultado final es de {this.state.score} aciertos
+            Terminaste, tu resultado final es de {this.state.score} aciertos de {QuizData.length} preguntas
           </p>
           </div>
 
@@ -95,8 +95,7 @@ class MemoryGame extends Component {
         <section className="container-lsm">
           <h5 className="title-lsm">Trivia</h5>
           <div className="question-container">
-            <p className="score-counter">{`pregunta ${currentQuestion} de ${QuizData.length -
-              1}`}</p>
+            <p className="score-counter">{`pregunta ${currentQuestion +1} de ${QuizData.length }`}</p>
             <p className="score-title">{questions}</p>
 
             <img className="image-trivia" src={images} />
