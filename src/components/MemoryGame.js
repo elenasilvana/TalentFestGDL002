@@ -3,6 +3,7 @@ import ShowCard from './ShowCard';
 import * as CARDIMG  from '../Data/IMAGES';
 import Nav from './NavBar';
 import a from '../ImagesTrivia/a-1.png';
+import './cards.css'
 
 class MemoryGame extends Component {
   render() {
@@ -29,7 +30,7 @@ class MemoryGame extends Component {
               </select>
             </section>
                 
-            <button className="waves-effect waves-light btn btn-ver-mas" >Siguiente</button>
+            <button className="waves-effect waves-light btn btn-siguiente" >Siguiente</button>
           </section>
         </section>
       </div>
