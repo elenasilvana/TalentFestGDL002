@@ -4,8 +4,8 @@ import './cards.css'
 class ShowCard extends Component {
     render() {
         return (
-            <div class="card img-cards">
-              <div class="card-image">
+            <div className="card img-cards">
+              <div className="card-image">
                 <img alt="sordo" src={this.props.img} />
               </div>
            </div>

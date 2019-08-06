@@ -1,4 +1,7 @@
-export const a = require('../Images/a.png');
+import a from "../Images/a.png";
+export const A = a;
+
+//export const a = require('../Images/a.png');
 export const b = require('../Images/b.png');
 export const c = require('../Images/c.png');
 export const d = require('../Images/d.png');
@@ -26,6 +29,4 @@ export const x = require('../Images/x.png');
 export const y = require('../Images/y.png');
 export const z = require('../Images/z.png');
 
-export const SINGSLETTERS =[a,b,c,d,e,f,g,h,i,j,k,l,m,n,ñ,o,p,q,r,s,t,u,v,w,x,y,z];
-
-
+export const SINGSLETTERS = [a,b,c,d,e,f,g,h,i,j,k,l,m,n,ñ,o,p,q,r,s,t,u,v,w,x,y,z];

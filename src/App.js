@@ -7,8 +7,6 @@ import AlphabetPage from './components/Alphabet';
 import MemoryGamePage from './components/MemoryGame';
 import LsmPage from './components/Lsm';
 
-
-
 const App = () => {
     return (
       <BrowserRouter>

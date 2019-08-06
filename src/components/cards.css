@@ -17,3 +17,10 @@
     border-left: 2px solid #077F8C;
     width: 35%;
 }
+.back-image{
+    background-color: black;
+}
+
+.front-image{
+    background-color: red;
+}

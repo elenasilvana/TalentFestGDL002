@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactCardFlip from "react-card-flip";
+import { A } from '../Data/IMAGES';
+
 
 const Card = ({ id, isFlipped, handleClick, cardNumber }) => (
   <ReactCardFlip isFlipped={isFlipped} flipSpeedBackToFront={1} flipSpeedFrontToBack={1} >
@@ -8,7 +10,7 @@ const Card = ({ id, isFlipped, handleClick, cardNumber }) => (
     </button>
 
     <button id={id} className={`card card-back ${cardNumber !== -1 ? "" : "hide-card"}`} onClick={handleClick} key="back">
-      { cardNumber }
+      { cardNumber } <img src={`${A}`}/>
     </button>
   </ReactCardFlip>
 );
