@@ -1,23 +1,16 @@
-/* Modules */
 import React from 'react';
+import ReactCardFlip from "react-card-flip";
 
-/* Style */
-// import './scss/Card.scss'
+const Card = ({ id, isFlipped, handleClick, cardNumber }) => (
+  <ReactCardFlip isFlipped={isFlipped} flipSpeedBackToFront={1} flipSpeedFrontToBack={1} >
+    <button id={id} className={`card card-front ${cardNumber !== -1 ? "" : "hide-card"}`} onClick={handleClick} key="front">
+      
+    </button>
 
-const questionImage = require('../ImagesLSM/logo.png');
-
-function Card({ image, flipped, onClick }) {
-	return (
-		<div className={`Card${!flipped ? ' flipped' : ''}`} {...{onClick}}>
-			<img src={questionImage}  alt="card" />
-			<div className="card__face card__face--front d-flex align-items-center">
-				<img src={image}  alt="card" />
-			</div>
-			<div className="card__face card__face--back d-flex align-items-center">
-				<img src={questionImage}  alt="card" />
-			</div>
-		</div>
-	);
-}
+    <button id={id} className={`card card-back ${cardNumber !== -1 ? "" : "hide-card"}`} onClick={handleClick} key="back">
+      { cardNumber }
+    </button>
+  </ReactCardFlip>
+);
 
 export default Card;
