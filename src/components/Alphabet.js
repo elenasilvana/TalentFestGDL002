@@ -9,24 +9,16 @@ class AlphabetPage extends Component {
   render() {
     return (
       <section>
-
- 
         <NavBar />
         <section className="container-lsm">
           <h5 className="title-lsm">Alfabeto</h5>
-
-          {/* <section className="info-container"></section> */}
-  
-      <div className="container-cards">
-        {
-          CARDIMG.SINGSLETTERS.map((card, index) => (
-            <ShowCard
-            img={card} />
-            ))
-          }
-      </div>
+          <div className="container-cards">
+            {CARDIMG.SINGSLETTERS.map((card, index) => (
+              <ShowCard img={card} />
+            ))}
+          </div>
+        </section>
       </section>
-          </section>
     );
   }
 }
