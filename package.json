@@ -5,6 +5,7 @@
   "dependencies": {
     "gh-pages": "^2.0.1",
     "materialize-css": "^1.0.0-rc.2",
+    "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-card-flip": "^0.8.1",
     "react-dom": "^16.8.6",
